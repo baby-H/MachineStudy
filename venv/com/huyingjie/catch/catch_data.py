@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-import requests
 from bs4 import BeautifulSoup
 import urllib
 from urllib import request
@@ -7,9 +6,6 @@ import re
 import os
 
 
-# reload(sys)
-
-# sys.setdefaultencoding('utf-8')
 def get_html(url):
     return urllib.request.urlopen(url, timeout=20).read().decode('utf-8')
 
