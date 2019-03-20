@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-# Author: Pan Yang (panyangnlp@gmail.com)
-# Copyright 2017 @ Yu Zhen
-
+# Author: Hu Ying Jie ( huyingjie2123@163.com )
+# Copyright 2019 @ Hu Ying Jie
 import gensim
 import logging
 import multiprocessing
@@ -18,7 +17,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',
                     level=logging.INFO)
 
 
-def cleanhtml(raw_html):
+def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, ' ', raw_html)
     return cleantext
@@ -36,7 +35,7 @@ class MySentences(object):
                     sline = line.strip()
                     if sline == "":
                         continue
-                    rline = cleanhtml(sline)
+                    rline = clean_html(sline)
                     tokenized_line = r' '.join(tokenize(rline))
                     is_alpha_word_line = [word for word in jieba.cut(tokenized_line, cut_all=False)
                                           if word.isalpha()]
@@ -45,7 +44,7 @@ class MySentences(object):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print("Please use python train_with_gensim.py data_path")
+        print("Please use python train_word2vec_with_jieba.py data_path")
         exit()
     data_path = sys.argv[1]
     begin = time()
@@ -55,11 +54,12 @@ if __name__ == '__main__':
                                    size=200,
                                    window=10,
                                    min_count=10,
-                                   workers=multiprocessing.cpu_count())
+                                   workers=multiprocessing.cpu_count(),
+                                   cbow_mean=0)
     model.save("data/model/word2vec_gensim")
     model.wv.save_word2vec_format("data/model/word2vec_org",
                                   "data/model/vocabulary",
                                   binary=False)
 
     end = time()
-    print("Total procesing time: %d seconds" % (end - begin))
+    print("Total processing time: %d seconds" % (end - begin))

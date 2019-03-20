@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72acd0cc-6e6f-4f1d-8964-ce59f26cf27e" name="Default Changelist" comment="" />
+    <list default="true" id="72acd0cc-6e6f-4f1d-8964-ce59f26cf27e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/com/huyingjie/catch/catch_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/com/huyingjie/catch/catch_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/com/huyingjie/test/similar_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/com/huyingjie/test/similar_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/com/huyingjie/training/train_word2vec_with_gensim.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/com/huyingjie/training/train_word2vec_with_jieba.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/com/huyingjie/training/train_word2vec_with_jieba.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,78 +17,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../数据源/生理考试神经系统/catch_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../数据源/医学词汇大全【官方推荐】/catch_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../数据源/内科 心内科 神经内科 呼吸内科/catch_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../数据源/妇产科病理学词库/catch_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../数据源/妇产科病理学/catch_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../数据源/Flenci神经病学词汇/catch_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/catch_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            <state relative-caret-position="38">
+              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
               <folding>
-                <element signature="e#23#38#0" expanded="true" />
+                <element signature="e#23#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../数据源/病理学/catch_data.py">
+        <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/training/train_word2vec_with_jieba.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="665">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#94#107#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/gensim/models/base_any2vec.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="1396" column="36" lean-forward="true" selection-start-line="1396" selection-start-column="36" selection-end-line="1396" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/word_0_out.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/join_file_address.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/gensim/models/word2vec.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="660" column="70" selection-start-line="660" selection-start-column="59" selection-end-line="660" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/test/similar_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/training/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -130,80 +149,96 @@
         <option value="$PROJECT_DIR$/../数据源/医学词汇大全【官方推荐】/catch_data.py" />
         <option value="$PROJECT_DIR$/venv/com/huyingjie/catch/test.txt" />
         <option value="$PROJECT_DIR$/../数据源/Flenci神经病学词汇/catch_data.py" />
+        <option value="$PROJECT_DIR$/venv/com/huyingjie/test/similar_test.py" />
+        <option value="$PROJECT_DIR$/venv/com/huyingjie/training/train_word2vec_with_jieba.py" />
         <option value="$PROJECT_DIR$/venv/com/huyingjie/catch/catch_data.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="449" />
-    <option name="y" value="85" />
+    <option name="x" value="186" />
+    <option name="y" value="101" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelligentInquriy" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelligentInquriy" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelligentInquriy" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelligentInquriy" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="huyingjie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelligentInquriy" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="huyingjie" type="462c0819:PsiDirectoryNode" />
               <item name="catch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelligentInquriy" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="huyingjie" type="462c0819:PsiDirectoryNode" />
               <item name="handle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelligentInquriy" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="huyingjie" type="462c0819:PsiDirectoryNode" />
+              <item name="sounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="huyingjie" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineStudy" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="huyingjie" type="462c0819:PsiDirectoryNode" />
               <item name="training" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="IntelligentInquriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.__init__">
+  <component name="RunManager" selected="Python.similar_test">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IntelligentInquriy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,27 +294,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../数据源/Flenci神经病学词汇/catch_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="catch_data (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="IntelligentInquriy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../数据源/生理考试神经系统" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../数据源/生理考试神经系统/catch_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -351,21 +365,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="similar_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IntelligentInquriy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/com/huyingjie/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/com/huyingjie/test/similar_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.local" />
       <item itemvalue="Python.catch_data (1)" />
-      <item itemvalue="Python.catch_data (3)" />
       <item itemvalue="Python.catch_data (4)" />
       <item itemvalue="Python.catch_data (5)" />
       <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.similar_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.similar_test" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python.catch_data (5)" />
         <item itemvalue="Python.catch_data (1)" />
         <item itemvalue="Python.catch_data (4)" />
-        <item itemvalue="Python.catch_data (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -394,17 +429,17 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22918862" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22918862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2900433" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2892741" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32900432" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -438,36 +473,29 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/catchData.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/123.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wikiextractor/train_word2vec_with_gensim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/join_file_address.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/catchData.py" />
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/123.txt" />
+    <entry file="file://$PROJECT_DIR$/../wikiextractor/train_word2vec_with_gensim.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/socket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -482,83 +510,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/Junit.py">
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/Junit.py" />
+    <entry file="file://$PROJECT_DIR$/../words/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/胃肠科目/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/内科 心内科 神经内科 呼吸内科/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/妇产科病理学词库/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/妇产科病理学/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/病理学/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/生理考试神经系统/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/医学词汇大全【官方推荐】/catch_data.py" />
+    <entry file="file://$PROJECT_DIR$/../数据源/Flenci神经病学词汇/catch_data.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/gensim/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../words/catch_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/handle/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/胃肠科目/catch_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/内科 心内科 神经内科 呼吸内科/catch_data.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/gensim/models/word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <caret line="660" column="70" selection-start-line="660" selection-start-column="59" selection-end-line="660" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/妇产科病理学词库/catch_data.py">
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/training/train_word2vec_with_gensim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        <state relative-caret-position="836">
+          <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/妇产科病理学/catch_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/病理学/catch_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/生理考试神经系统/catch_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/医学词汇大全【官方推荐】/catch_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/training/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../数据源/Flenci神经病学词汇/catch_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -569,12 +561,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/gensim/models/base_any2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="1396" column="36" lean-forward="true" selection-start-line="1396" selection-start-column="36" selection-end-line="1396" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/test/similar_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/catch_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="38">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           <folding>
-            <element signature="e#23#38#0" expanded="true" />
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/catch/join_file_address.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/com/huyingjie/training/train_word2vec_with_jieba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#94#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
