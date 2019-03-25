@@ -15,4 +15,5 @@ if __name__ == '__main__':
     with mic as source:
         r.adjust_for_ambient_noise(source)
         audio = r.listen(source)
+        print('录音结束，开始recognize...')
         client.send(audio)
