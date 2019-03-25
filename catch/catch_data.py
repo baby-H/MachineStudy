@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # Author: Hu Ying Jie ( huyingjie2123@163.com )
-# Copyright 2019 @ Hu Ying Jie
 from bs4 import BeautifulSoup
 import urllib
 from urllib import request

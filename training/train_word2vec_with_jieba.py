@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # Author: Hu Ying Jie ( huyingjie2123@163.com )
-# Copyright 2019 @ Hu Ying Jie
 import gensim
 import logging
 import multiprocessing
