@@ -16,8 +16,10 @@ logging.basicConfig()
 base_url = "ws://rtasr.xfyun.cn/v1/ws"
 app_id = "5c933e31"
 api_key = "6435190c7ab54be46fca125adc77991e"
-file_path = "./test_1.pcm"
+file_path = "test_1.pcm"
 end_tag = "{\"end\": true}"
+final_result = ''
+from handle import json_use
 
 
 class Client():
@@ -36,21 +38,20 @@ class Client():
         self.trecv.start()
 
     def send(self, file_path):
-        # file_object = open(file_path, 'rb')
+        file_object = open(file_path, 'rb')
         try:
             index = 1
             while True:
-                # chunk = file_object.read(1280)
-                # if not chunk:
-                #     break
-                self.ws.send(file_path)
+                chunk = file_object.read(1280)
+                if not chunk:
+                    break
+                self.ws.send(chunk)
 
                 index += 1
                 time.sleep(0.04)
         finally:
-            print('around error')
             # print str(index) + ", read len:" + str(len(chunk)) + ", file tell:" + str(file_object.tell())
-            # file_object.close()
+            file_object.close()
 
         self.ws.send(bytes(end_tag.encode(encoding='utf8')))
         print("send end tag success")
@@ -69,8 +70,9 @@ class Client():
                     print("handshake success, result: " + result)
 
                 if result_dict["action"] == "result":
-                    temp_json = json.loads(result_dict['data'])
                     print("rtasr result: " + result)
+                    final_result = result_dict['data']
+                    print(json_use.get_final(final_result))
 
                 if result_dict["action"] == "error":
                     print("rtasr error: " + result)
