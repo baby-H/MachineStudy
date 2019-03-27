@@ -10,7 +10,7 @@ import websocket
 from websocket import create_connection
 from urllib.parse import quote
 import logging
-
+from handle import json_use
 
 logging.basicConfig()
 base_url = "ws://rtasr.xfyun.cn/v1/ws"
@@ -18,8 +18,6 @@ app_id = "5c933e31"
 api_key = "6435190c7ab54be46fca125adc77991e"
 file_path = "test_1.pcm"
 end_tag = "{\"end\": true}"
-final_result = ''
-from handle import json_use
 
 
 class Client():
@@ -37,23 +35,19 @@ class Client():
         self.trecv = threading.Thread(target=self.recv)
         self.trecv.start()
 
-    def send(self, file_path):
-        file_object = open(file_path, 'rb')
+    def send(self, data_t):
         try:
-            index = 1
+            index = 1280
             while True:
-                chunk = file_object.read(1280)
-                if not chunk:
+                if index > len(data_t):
+                    self.ws.send(data_t[index - 1280:len(data_t)])
                     break
-                self.ws.send(chunk)
-
-                index += 1
-                time.sleep(0.04)
+                else:
+                    self.ws.send(data_t[index - 1280:index])
+                index += 1280
         finally:
-            # print str(index) + ", read len:" + str(len(chunk)) + ", file tell:" + str(file_object.tell())
-            file_object.close()
-
-        self.ws.send(bytes(end_tag.encode(encoding='utf8')))
+            print('结束')
+            self.ws.send(bytes(end_tag.encode(encoding='utf8')))
         print("send end tag success")
 
     def recv(self):
@@ -70,15 +64,14 @@ class Client():
                     print("handshake success, result: " + result)
 
                 if result_dict["action"] == "result":
-                    print("rtasr result: " + result)
                     final_result = result_dict['data']
-                    print(json_use.get_final(final_result))
-
+                    if json_use.get_status(final_result) == '0':
+                        print(json_use.get_final(final_result))
                 if result_dict["action"] == "error":
                     print("rtasr error: " + result)
                     self.ws.close()
-                    return
-        except websocket.WebSocketConnectionClosedException:
+        except websocket.WebSocketConnectionClosedException as e:
+            self.ws.close()
             print("receive result end")
 
     def close(self):
