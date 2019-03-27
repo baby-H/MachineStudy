@@ -31,10 +31,15 @@ def get_ids_by_path(path=None):
     set_t = set()
     temp_start, index = time.time(), 0
     f = open(path, 'r', encoding='utf8')
-    for line in f:
+    for line in f.readlines():
         index += 1
         print('index =', index)
-        get_ids_by_word(word_t=line[:-1], set_t=set_t)
+        try:
+            get_ids_by_word(word_t=line[:-1], set_t=set_t)
+        except BaseException as e:
+            print(e)
+            print(404)
+            continue
     print('获得ID用时 =', time.time() - temp_start)
     f.close()
     return set_t
@@ -59,4 +64,3 @@ def get_content(in_path=None, out_path=None):
 
 if __name__ == '__main__':
     get_content(in_path=r'Word_in.txt', out_path=r'word_1_out.txt')
-
