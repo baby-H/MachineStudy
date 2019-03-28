@@ -50,13 +50,16 @@ def get_content(in_path=None, out_path=None):
     set_final = get_ids_by_path(in_path)
     f = open(out_path, 'w+', encoding='utf8')
     for t in set_final:
-        res = request.urlopen(url_t + t + '/1')
-        soup = BeautifulSoup(res, 'html.parser')
-        for main_n1 in soup.find_all('div', class_='main_n1'):
-            for lemma in main_n1.find_all('div', class_='lemma-main'):
-                for para in lemma.find_all('div', class_='para'):
-                    for p in para.find_all('p'):
-                        f.write(p.get_text())
+        try:
+            res = request.urlopen(url_t + t + '/1')
+            soup = BeautifulSoup(res, 'html.parser')
+            for main_n1 in soup.find_all('div', class_='main_n1'):
+                for lemma in main_n1.find_all('div', class_='lemma-main'):
+                    for para in lemma.find_all('div', class_='para'):
+                        for p in para.find_all('p'):
+                            f.write(p.get_text())
+        except BaseException as e:
+            print(e)
         f.write('\n')
         print('id = ', t)
     f.close()
