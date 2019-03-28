@@ -31,7 +31,7 @@ class Client:
                            str(hl.hexdigest()).encode(encoding='utf'),
                            sha1).digest()
         signa = base64.b64encode(my_sign)
-        self.wake = wake
+        # self.wake = wake
         self.ws = create_connection(base_url + "?appid=" + app_id + "&ts=" + ts + "&signa=" + quote(signa))
         self.trecv = threading.Thread(target=self.recv)
         self.trecv.start()
@@ -67,12 +67,13 @@ class Client:
                 if result_dict["action"] == "result":
                     final_result = result_dict['data']
                     if json_use.get_status(final_result) == '0':
+                        print(result)
                         # 最终回答问题的地方 完成时将控制台输出转成语音输出
-                        print(sentence_manager.get_final_sentence(final_result))
-                        if str_use.is_greet(final_result):
-                            self.wake = 1
-                        else:
-                            self.wake = 0
+                        # print(sentence_manager.get_final_sentence(final_result))
+                        # if str_use.is_greet(final_result):
+                        #     self.wake = 1
+                        # else:
+                        #     self.wake = 0
                 if result_dict["action"] == "error":
                     print("rtasr error: " + result)
                     self.ws.close()

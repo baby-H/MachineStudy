@@ -34,9 +34,17 @@ def getBody(filepath):
     return data
 
 
+def send(data_t):
+    aue = "raw"
+    engineType = "sms16k"
+    data = {'audio': base64.b64encode(data_t)}
+    r_t = requests.post(URL, headers=getHeader(aue, engineType), data=data)
+    return r_t.content.decode(encoding='utf8')
+
+
 if __name__ == '__main__':
     aue = "raw"
     engineType = "sms16k"
-    audioFilePath = r"E:\source\python-speech-recognition\audio_files\test_1.pcm"
+    audioFilePath = r"/Users/baby/source/MachineStudy/resource/test_1.pcm"
     r = requests.post(URL, headers=getHeader(aue, engineType), data=getBody(audioFilePath))
     print(r.content.decode(encoding='utf8'))

@@ -5,10 +5,18 @@ from handle import json_use, str_use, model_use
 
 def get_final_sentence(json_t=None):
     if str_use.is_greet(json_t):
-        return '嗯， 您好啊！！！！'
+        return '您好啊！！！！'
     else:
         positive_list_t = json_use.get_list(json_t)
         return model_use.get_sentence(positive=positive_list_t)
+
+
+def get_final_sentence_on(str_t):
+    if str_use.is_greet_on(str_t):
+        return '您好啊！！！！'
+    else:
+        list_t = json_use.get_list_on(str_t)
+        return model_use.get_sentence(list_t)
 
 
 if __name__ == '__main__':

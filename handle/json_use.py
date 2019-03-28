@@ -2,6 +2,7 @@
 # Author: Hu Ying Jie ( huyingjie2123@163.com )
 import json
 import time
+import jieba
 
 
 def get_final(xun_fei_str=None):
@@ -22,6 +23,22 @@ def get_list(xun_fei_str=None):
             continue
         if judge == 1:
             li.append(x_t['cw'][0]['w'])
+    return li
+
+
+def get_list_on(xun_fei_str=None):
+    t = jieba.cut(xun_fei_str)
+    li = []
+    judge = 0
+    for i in t:
+        if i in ['！', '？', '。', '，']:
+            continue
+        if i in ['我', '她', '它', '他']:
+            judge += 1
+            continue
+        if judge == 1:
+            li.append(i)
+    print(li)
     return li
 
 
