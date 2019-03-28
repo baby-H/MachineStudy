@@ -16,7 +16,7 @@ def throw_wake_thread():
             r.adjust_for_ambient_noise(source)
             audio_w = r.listen(source)
             wav_w = audio_w.get_wav_data(convert_rate=16000)
-            client_w = xunfei_ontime_sound_text.Client()
+            client_w = xunfei_ontime_sound_text.Client(wake)
             client_w.send(wav_w[44:])
         else:
             engine = pyttsx3.init()
