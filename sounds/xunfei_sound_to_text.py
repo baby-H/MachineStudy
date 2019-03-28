@@ -40,4 +40,3 @@ if __name__ == '__main__':
     audioFilePath = r"E:\source\python-speech-recognition\audio_files\test_1.pcm"
     r = requests.post(URL, headers=getHeader(aue, engineType), data=getBody(audioFilePath))
     print(r.content.decode(encoding='utf8'))
-    getBody(audioFilePath)

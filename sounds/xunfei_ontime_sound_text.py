@@ -10,8 +10,8 @@ import websocket
 from websocket import create_connection
 from urllib.parse import quote
 import logging
-from handle import json_use
-
+from handle import json_use, str_use
+from handle import sentence_manager
 logging.basicConfig()
 base_url = "ws://rtasr.xfyun.cn/v1/ws"
 app_id = "5c933e31"
@@ -20,8 +20,8 @@ file_path = "test_1.pcm"
 end_tag = "{\"end\": true}"
 
 
-class Client():
-    def __init__(self):
+class Client:
+    def __init__(self, wake):
         # 生成鉴权参数
         ts = str(int(time.time()))
         tmp = app_id + ts
@@ -31,6 +31,7 @@ class Client():
                            str(hl.hexdigest()).encode(encoding='utf'),
                            sha1).digest()
         signa = base64.b64encode(my_sign)
+        self.wake = wake
         self.ws = create_connection(base_url + "?appid=" + app_id + "&ts=" + ts + "&signa=" + quote(signa))
         self.trecv = threading.Thread(target=self.recv)
         self.trecv.start()
@@ -66,11 +67,17 @@ class Client():
                 if result_dict["action"] == "result":
                     final_result = result_dict['data']
                     if json_use.get_status(final_result) == '0':
-                        print(json_use.get_final(final_result))
+                        # 最终回答问题的地方 完成时将控制台输出转成语音输出
+                        print(sentence_manager.get_final_sentence(final_result))
+                        if str_use.is_greet(final_result):
+                            self.wake = 1
+                        else:
+                            self.wake = 0
                 if result_dict["action"] == "error":
                     print("rtasr error: " + result)
                     self.ws.close()
         except websocket.WebSocketConnectionClosedException as e:
+            print(e)
             self.ws.close()
             print("receive result end")
 

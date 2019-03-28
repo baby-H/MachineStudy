@@ -1,23 +1,22 @@
+# -*- coding: utf-8 -*-
+# Author: Hu Ying Jie ( huyingjie2123@163.com )
 import os
 
 
-def test_for():
+def _test_for():
+    # 获取当前路径
+    base_dir = os.path.dirname(__file__)
     for i in range(10):
         path = os.path.join(base_dir, str(i) + '.txt')
-        f = open(path, 'w+', encoding='utf')
+        f = open(path, 'w+', encoding='utf8')
         f.write(str(i))
         f.close()
-        fp = open(path, 'w+', encoding='utf8')
 
 
-base_dir = os.path.dirname(__file__)
-path = os.path.join(base_dir, 'test.txt')
-f = open(path, 'w+', encoding='utf')
 if __name__ == '__main__':
-    for i in range(10):
-        f.write('hello')
-    f.close()
-    # 获取当前文件目录
-    print(base_dir)
-
+    list_t = []
+    with open('Word_in.txt', 'r+', encoding='utf8') as f:
+        for i in f.readlines():
+            list_t.append(i[:-1])
+    print(list_t)
 
