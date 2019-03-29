@@ -14,6 +14,8 @@ def result_handle(list_t):
 
 
 def get_sentence(positive=None, negative=None, top_n=10, restrict_vocab=None, indexer=None):
+    if len(positive) == 0:
+        return '数据错误'
     positive.append('病名')
     model = Word2Vec.load('/Users/baby/Documents/word2vec_gensim')
     result = model.most_similar(positive, negative, top_n, restrict_vocab, indexer)

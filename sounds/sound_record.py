@@ -3,7 +3,6 @@
 import speech_recognition as sr
 from sounds import xunfei_ontime_sound_text
 import pyttsx3
-import threading
 from handle import wake_use
 from sounds import xunfei_sound_to_text
 from handle import sentence_manager
@@ -31,27 +30,33 @@ def throw_wake_thread():
             engine.say("您好, 我在, 有问题可以随时问我的哦！")
             engine.runAndWait()
             audio = r.listen(source)
-            engine.say("问题已签收, 大象高速计算中")
+            engine.say("问题已签收, 小老弟高速计算中")
             wav = audio.get_wav_data(convert_rate=16000)
             client = xunfei_ontime_sound_text.Client(wake)
             client.send(wav[44:])
             engine.runAndWait()
 
 
+def create_con():
+    r = sr.Recognizer()
+    engine = pyttsx3.init()
+    rate = engine.getProperty('rate')
+    engine.setProperty('rate', rate - 20)
+    with sr.Microphone() as source:
+        r.adjust_for_ambient_noise(source, duration=1.3)
+        engine.say("小老弟在，叫我干啥")
+        engine.runAndWait()
+        audio_w = r.listen(source)
+        engine.say("您的话, 朕已阅")
+        wav_w = audio_w.get_wav_data(convert_rate=16000)
+        temp_t = xunfei_sound_to_text.send(wav_w[44:])
+        result_json = json.loads(temp_t)
+        t = sentence_manager.get_final_sentence_on(result_json['data'])
+        engine.say(t)
+        engine.runAndWait()
+
+
 if __name__ == '__main__':
     while True:
-        r = sr.Recognizer()
-        engine = pyttsx3.init()
-        with sr.Microphone() as source:
-            r.adjust_for_ambient_noise(source, duration=1.3)
-            engine.say("您好, 有问题可以随时问我的哦！")
-            engine.runAndWait()
-            audio_w = r.listen(source)
-            engine.say("问题已签收, 大象要飞高速计算中")
-            wav_w = audio_w.get_wav_data(convert_rate=16000)
-            temp_t = xunfei_sound_to_text.send(wav_w[44:])
-            result_json = json.loads(temp_t)
-            t = sentence_manager.get_final_sentence_on(result_json['data'])
-            engine.say(t)
-            engine.runAndWait()
+        create_con()
 
