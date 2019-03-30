@@ -14,11 +14,6 @@ def interrupt_callback():
     global interrupted
     return interrupted
 
-# if len(sys.argv) == 1:
-#     print("Error: need to specify model name")
-#     print("Usage: python demo.py your.model")
-#     sys.exit(-1)
-
 
 if __name__ == '__main__':
     signal.signal(signal.SIGINT, signal_handler)

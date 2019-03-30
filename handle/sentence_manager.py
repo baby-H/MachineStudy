@@ -4,7 +4,7 @@ from handle import json_use, str_use, model_use
 
 
 def get_final_sentence(json_t=None):
-    if str_use.is_greet(json_t):
+    if str_use.is_greet(json_t) == -1:
         return '您好啊！！！！'
     else:
         positive_list_t = json_use.get_list(json_t)
@@ -12,11 +12,11 @@ def get_final_sentence(json_t=None):
 
 
 def get_final_sentence_on(str_t):
-    if str_use.is_greet_on(str_t):
-        return '好的！！！！'
-    else:
+    if str_use.index_in_str(str_t) == -1:
         list_t = json_use.get_list_on(str_t)
         return model_use.get_sentence(list_t)
+    else:
+        return '哎呦，您的话，我暂时不能听懂'
 
 
 if __name__ == '__main__':

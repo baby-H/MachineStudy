@@ -8,6 +8,7 @@ from sounds import xunfei_sound_to_text
 from handle import sentence_manager
 import json
 
+
 def throw_wake_thread():
     wake = wake_use.Wake()
     r = sr.Recognizer()
@@ -19,7 +20,7 @@ def throw_wake_thread():
             engine.say("您好, 有问题可以随时问我的哦！")
             engine.runAndWait()
             audio_w = r.listen(source)
-            engine.say("问题已签收, 大象要飞高速计算中")
+            engine.say("问题已签收, 小老弟高速计算中")
             engine.runAndWait()
             wav_w = audio_w.get_wav_data(convert_rate=16000)
             client_w = xunfei_ontime_sound_text.Client(wake)
@@ -44,13 +45,14 @@ def create_con():
     engine.setProperty('rate', rate - 20)
     with sr.Microphone() as source:
         r.adjust_for_ambient_noise(source, duration=1.3)
-        engine.say("小老弟在，叫我干啥")
+        engine.say("在，叫我干啥")
         engine.runAndWait()
         audio_w = r.listen(source)
-        engine.say("您的话, 朕已阅")
+        engine.say("您的话, 朕已阅, 正在处理中")
         wav_w = audio_w.get_wav_data(convert_rate=16000)
         temp_t = xunfei_sound_to_text.send(wav_w[44:])
         result_json = json.loads(temp_t)
+        print(result_json['data'])
         t = sentence_manager.get_final_sentence_on(result_json['data'])
         engine.say(t)
         engine.runAndWait()

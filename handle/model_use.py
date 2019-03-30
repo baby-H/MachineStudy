@@ -15,16 +15,20 @@ def result_handle(list_t):
 
 def get_sentence(positive=None, negative=None, top_n=10, restrict_vocab=None, indexer=None):
     if len(positive) == 0:
-        return '数据错误'
+        return '数据描述错误'
     positive.append('病名')
     model = Word2Vec.load('/Users/baby/Documents/word2vec_gensim')
-    result = model.most_similar(positive, negative, top_n, restrict_vocab, indexer)
+    try:
+        result = model.most_similar(positive, negative, top_n, restrict_vocab, indexer)
+    except BaseException as e:
+        print(e)
+        return str(e)
+
     result_1 = result_handle(result)
     str_t = ''
     if result_1:
         for re_1 in result_1:
-            str_t += '有' + str(round(re_1[1], 3)) + '的可能性是' + re_1[0]
-        print(str_t)
+            str_t += '有' + str(round(re_1[1], 3) * 100) + '的可能性是' + re_1[0]
         return '根据您的症状，您的病' + str_t
     else:
         i = 0
@@ -32,9 +36,9 @@ def get_sentence(positive=None, negative=None, top_n=10, restrict_vocab=None, in
             i += 1
             if i > 4:
                 break
-            str_t += re[0] + '和您的秒速有百分之' + str(round(re[1], 2) * 100) + '的概率'
+            str_t += re[0] + '和您的描述有百分之' + str(round(re[1], 2) * 100) + '的概率' + '，'
         print(str_t)
-        return '根据您的症状库里暂时没有找到相关记载，不过我找到了如下可能有关系的十个词，' + str_t
+        return '根据您的症状库里暂时没有找到相关记载，不过我找到了如下可能有关系的四个词，' + str_t
 
 
 if __name__ == '__main__':

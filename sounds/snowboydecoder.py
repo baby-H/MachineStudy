@@ -214,7 +214,7 @@ class HotwordDetector(object):
                                          time.localtime(time.time()))
                     logger.info(message)
 
-                    print(4444)
+                    # print(4444)
 
                     sound_record.create_con()
 
