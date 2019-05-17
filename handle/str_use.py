@@ -5,10 +5,12 @@ import jieba
 
 
 def index_in_str(str_t):
-    if (str(str_t).find('我') + str(str_t).find('饿')) < 0:
-        return 0
-    else:
+    print(str(str_t).find('我'))
+    if str(str_t).find('我') >= 0 or str(str_t).find('饿') >= 0 or str(str_t).find('俄') >= 0:
+        print("我")
         return -1
+    else:
+        return 0
 
 
 def is_greet(json_t=None):

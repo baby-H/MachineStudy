@@ -45,6 +45,6 @@ def send(data_t):
 if __name__ == '__main__':
     aue = "raw"
     engineType = "sms16k"
-    audioFilePath = r"/Users/baby/source/MachineStudy/resource/test_1.pcm"
+    audioFilePath = r"/Users/baby/source/MachineStudy/sounds/resources/test_1.pcm"
     r = requests.post(URL, headers=getHeader(aue, engineType), data=getBody(audioFilePath))
     print(r.content.decode(encoding='utf8'))
